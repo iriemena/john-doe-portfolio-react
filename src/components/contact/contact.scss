@@ -1,0 +1,49 @@
+@import "../../responsive.scss";
+
+#contact {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 2rem;
+    margin: 2rem auto;
+
+    @include sm {
+      flex-wrap: wrap;
+      row-gap: 0;
+      column-gap: 1rem;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 2rem;
+
+      @include sm {
+        margin: 0 0.5rem;
+      }
+
+      a {
+        font-size: 1.2rem;
+
+        @include sm {
+          font-size: 1rem;
+        }
+
+        &:hover {
+          color: #0000006b;
+          text-decoration: underline;
+          text-decoration-color: #0000006b;
+          text-underline-offset: 1rem;
+        }
+      }
+    }
+  }
+}

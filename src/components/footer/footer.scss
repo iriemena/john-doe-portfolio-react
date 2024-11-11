@@ -1,0 +1,27 @@
+@import "../../responsive.scss";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+    @include sm {
+      flex-direction: column;
+    }
+  }
+
+  p {
+    margin: 2.5rem 0;
+
+    @include sm {
+      text-align: center;
+    }
+  }
+}

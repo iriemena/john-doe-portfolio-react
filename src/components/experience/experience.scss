@@ -1,0 +1,53 @@
+@import "../../responsive.scss";
+
+#experience {
+  @include md {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .experience-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .experience-details {
+      border: 0.1rem solid gray;
+      flex: 1;
+      border-radius: 2rem;
+      padding: 2rem;
+
+      .sub-title {
+        padding-bottom: 2rem;
+        font-weight: 600;
+        color: rgb(85, 85, 85);
+        font-size: 1.75rem;
+
+        @include sm {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .article-container {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: initial;
+
+
+
+    .article {
+      display: flex;
+      gap: 0.5rem;
+      width: 10rem;
+
+    }
+  }
+
+  .icon img {
+    margin: 0;
+  }
+}

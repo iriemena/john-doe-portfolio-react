@@ -1,0 +1,32 @@
+@import "../../responsive.scss";
+
+#profile {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+
+  @include md {
+    height: 83vh;
+    flex-direction: column;
+    gap: 2rem;
+  
+  }
+
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .black {
+      background-color: #353535;
+      color: #ffffff;
+
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+}

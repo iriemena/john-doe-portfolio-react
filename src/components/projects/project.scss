@@ -1,0 +1,33 @@
+@import "../../responsive.scss";
+
+#projects {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .project-details {
+      border: 1.2px solid gray;
+      border-radius: 2rem;
+      background-color: rgb(250, 250, 250);
+      flex: 1;
+      padding: 1rem;
+
+      img {
+        border-radius: 2rem;
+        height: fit-content;
+        width: 90%;
+      }
+    }
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
+
+  .sub-title {
+    margin: 1rem 0;
+    font-size: 1.75rem;
+  }
+}

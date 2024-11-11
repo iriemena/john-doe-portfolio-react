@@ -1,0 +1,41 @@
+@import "../../responsive.scss";
+
+#about {
+  .image-container img {
+    border-radius: 2rem;
+    margin: 0 auto;
+  }
+
+  .about-main-container {
+    display: flex;
+
+    gap: 4rem;
+
+    @include md {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .wrapper {
+      .text-container {
+        text-align: justify;
+        font-size: 1.2rem;
+        line-height: 1.2;
+      }
+    }
+
+    .about-container {
+      display: flex;
+      gap: 2rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+
+      .about-details {
+        border: 1px solid gray;
+        flex: 1;
+        border-radius: 2rem;
+        padding: 1.5rem;
+      }
+    }
+  }
+}

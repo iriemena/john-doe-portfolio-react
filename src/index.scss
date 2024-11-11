@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import "./responsive.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+
+  @include md {
+    width: 300px;
+    height: 300px;
+  }
+  @include sm {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+
+  .btn {
+    border: rgb(53, 53, 53) 0.1rem solid;
+    transition: all 300ms ease;
+    border-radius: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    background: none;
+    font-weight: 600;
+    width: 8rem;
+
+    @include sm {
+      width: 6rem;
+      font-size: 0.75rem;
+    }
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+
+.section-textp1 {
+  font-weight: 400;
+}
+.section-textp2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+
+  @include sm {
+    font-size: 1rem;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2.5rem 0;
+
+  @include md {
+    margin: 0;
+  }
+
+  @include sm {
+    font-size: 2rem;
+  }
+}
+
+section {
+  text-align: center;
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  position: relative;
+  min-height: fit-content;
+  box-sizing: border-box;
+
+  @include md {
+    height: fit-content;
+    margin: 0 5rem;
+  }
+
+  @include sm {
+    margin: 0 2rem;
+  }
+}
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 10rem;
+  cursor: pointer;
+
+  @include md {
+    opacity: 0;
+  }
+}
