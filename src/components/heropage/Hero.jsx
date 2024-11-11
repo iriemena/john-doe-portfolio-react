@@ -13,7 +13,7 @@ function Hero() {
 
         <div className="profile-details">
           <p className="section-textp1">Hello, I'm</p>
-          <h1 className="title">SunnyTech</h1>
+          <h1 className="title">John Doe</h1>
           <p className="section-textp2">Web Developer</p>
           <div className="btn-container">
             <div
@@ -30,10 +30,16 @@ function Hero() {
             </div>
           </div>
           <div className="icon-container">
-            <div className="icon" onClick={() => window.open('https://www.linkedin.com', '_blank')}>
+            <div
+              className="icon"
+              onClick={() => window.open("https://www.linkedin.com", "_blank")}
+            >
               <img src="/assets/linkedin.png" alt="" />
             </div>
-            <div className="icon" onClick={() => window.open('https://www.github.com', '_blank')}>
+            <div
+              className="icon"
+              onClick={() => window.open("https://www.github.com", "_blank")}
+            >
               <img src="/assets/github.png" alt="" />
             </div>
           </div>

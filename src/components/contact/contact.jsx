@@ -1,5 +1,6 @@
 import React from 'react'
 import './contact.scss'
+import Footer from '../footer/Footer'
 
 function contact() {
   return (
@@ -34,7 +35,7 @@ function contact() {
       </div>
     </section>
 
-   
+   <Footer />
   
     </>
   )

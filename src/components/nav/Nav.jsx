@@ -8,7 +8,7 @@ function Nav() {
   return (
     <>
       <nav id="desktop-nav">
-        <div className="logo">SunnyTech</div>
+        <div className="logo">John Doe</div>
         <ul className="nav-links">
           <li>
             <a href="#about">About</a>
@@ -27,9 +27,16 @@ function Nav() {
 
       <nav id="mobile-nav">
         <div className="mobile-container">
-          <div className="logo">SunnyTech</div>
+          <div className="logo">John Doe</div>
 
-          <div className={open === false ? 'hamburger-container': 'hamburger-container open'} onClick={() => setOpen(!open)}>
+          <div
+            className={
+              open === false
+                ? "hamburger-container"
+                : "hamburger-container open"
+            }
+            onClick={() => setOpen(!open)}
+          >
             <span></span>
             <span></span>
             <span></span>
